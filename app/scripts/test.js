@@ -1,13 +1,15 @@
-import HelloWorld from 'hello-world';
+import HelloWorld from './hello-world';
 //var HelloWorld = require('./hello-world');
 
 var App = React.createClass({
   render: function() {
-    <div className="wrapper">App
-      <HelloWorld/>
-    </div>
+    return (<div className="wrapper">
+    <h1>App</h1>
+    <HelloWorld />
+    </div>)
   }
 });
+
 ReactDOM.render(
   <App/>,
   document.getElementById('app')

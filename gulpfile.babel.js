@@ -37,6 +37,7 @@ gulp.task('templates', () => {
 gulp.task('webpack', cb => {
   webpack({
     entry: './app/scripts/webpack.js',
+    loader: 'babel',
     output: {
       path: '.tmp/scripts/',
       filename: 'bundle.js',
